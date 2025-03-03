@@ -11,3 +11,14 @@ def pivot_sort(arr):
     
     # Recursively sort the sub-arrays and concatenate them with the pivot
     return pivot_sort(left) + [pivot] + pivot_sort(right)
+
+def stalin_sort(arr):
+    if not arr:
+        return []
+    
+    result = [arr[0]]
+    for num in arr[1:]:
+        if num >= result[-1]:
+            result.append(num)
+    
+    return result
