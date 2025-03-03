@@ -25,7 +25,7 @@ def quadratic_solver(a: float, b: float, c: float, complex_allowed: bool=False):
             return([-c / b])
 
     # Calculate the discriminant of the equation
-    discriminant = b ** 2 + 4 * a * c
+    discriminant = b ** 2 - 4 * a * c
 
     if discriminant<0:
         if complex_allowed:
