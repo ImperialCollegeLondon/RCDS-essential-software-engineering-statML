@@ -20,3 +20,13 @@ def pivot_sort(arr):
     
     # Recursively sort left and right partitions, concatenate with middle
     return pivot_sort(left) + middle + pivot_sort(right)
+
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
