@@ -2,3 +2,4 @@
 *.pyc
 hello.py
 /__pycache__/*
+.DS_store
