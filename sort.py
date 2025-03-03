@@ -8,7 +8,7 @@ def pivot_sort(arr):
     Returns:
     list: A new list with the elements from arr sorted in ascending order.
     """
-    if len(arr) <= 1:  # Base case: if the array has 0 or 1 elements, it is already sorted
+    if len(arr) < 2:  # Base case: if the array has 0 or 1 elements, it is already sorted
         return arr
     else:
         pivot = arr[0]  # Choose the first element as the pivot
