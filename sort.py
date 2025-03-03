@@ -16,3 +16,8 @@ if __name__ == "__main__":
     sorted_list = pivot_sort(unsorted_list)
     print("Unsorted:", unsorted_list)
     print("Sorted:", sorted_list)
+
+    # dhqhdqkqkdq
+
+
+    # slkdvnlwfqhnlwfqnlkdf
