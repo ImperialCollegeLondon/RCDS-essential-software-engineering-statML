@@ -7,6 +7,9 @@ def pivot_sort(arr):
     return pivot_sort(left) + [pivot] + pivot_sort(right)
 
 
+    #wqdwdhqhdo
+
+
 if __name__ == "__main__":
     # Demonstration of pivot_sort usage
     unsorted_list = [3, 6, 2, 7, 1, 4, 8]
