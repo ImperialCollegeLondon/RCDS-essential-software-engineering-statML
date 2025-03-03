@@ -1,5 +1,14 @@
 def pivot_sort(arr):
-    if len(arr) <= 1:
+    """
+    Sorts an array using the pivot sort (a variation of quicksort) algorithm.
+
+    Parameters:
+    arr (list): The list of elements to be sorted.
+
+    Returns:
+    list: A new list with the elements from arr sorted in ascending order.
+    """
+    if len(arr) <= 1:  # Base case: if the array has 0 or 1 elements, it is already sorted
         return arr
     else:
         pivot = arr[0]  # Choose the first element as the pivot
