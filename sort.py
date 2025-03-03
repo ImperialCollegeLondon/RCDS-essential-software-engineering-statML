@@ -18,6 +18,25 @@ def pivot_sort(lst):
         greater_than_pivot = [x for x in lst[1:] if x > pivot]
         return pivot_sort(less_than_pivot) + [pivot] + pivot_sort(greater_than_pivot)
 
+def quick_sort(lst):
+    """
+    Sorts a list of elements using the quick sort algorithm.
+    Args:
+        list (list): The list of elements to be sorted.
+    Returns:
+        list: A new list containing the sorted elements.
+    Example:
+        >>> quick_sort([3, 6, 8, 10, 1, 2, 1])
+        [1, 1, 2, 3, 6, 8, 10]
+    """
+    if len(list) <= 1:
+        return list
+    else:
+        pivot = list[0]
+        less_than_pivot = [x for x in lst[1:] if x <= pivot]
+        greater_than_pivot = [x for x in lst[1:] if x > pivot]
+        return quick_sort(less_than_pivot) + [pivot] + quick_sort(greater_than_pivot)
+
 # Example usage
 if __name__ == "__main__":
     unsorted_list = [3, 6, 8, 10, 1, 2, 1]
