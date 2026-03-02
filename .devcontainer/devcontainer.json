@@ -3,7 +3,7 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.13-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/python:3.13-trixie",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install --user -r requirements.txt",
@@ -12,7 +12,10 @@
 	"customizations": {
 	    "vscode": {
 			"settings": {
-				"jupyter.defaultKernel": "python3",
+				"jupyter.kernels.excludePythonEnvironments": [
+					"/usr/bin/python3",
+					"/bin/python3"
+				],
 				"python.defaultInterpreterPath": "python3",
 				"git.confirmSync": false,
 				"git.autofetch": true
