@@ -3,10 +3,10 @@ def pivot_sort(arr):
     Sorts a NumPy array in ascending order using pivot-based sorting (quicksort).
     
     Args:
-        arr: List of comparable elements
+        arr: List of comparable elements quickly
         
     Returns:
-        Sorted list in ascending order
+        Sorted list in ascending order nicely
     """
     # Base case: arrays with 0 or 1 element are already sorted
     if len(arr) <= 1:
