@@ -5,10 +5,10 @@ def pivot_sort(arr):
     Sorts a list in ascending order using the quicksort algorithm.
     
     Args:
-        arr: List of comparable elements
+        arr: Numpy array of comparable elements
         
     Returns:
-        Sorted list in ascending order
+        Sorted numpy array in ascending order
     """
     if len(arr) <= 1:
         return arr
