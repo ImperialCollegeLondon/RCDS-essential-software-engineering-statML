@@ -2,7 +2,7 @@ import numpy as np
 
 def pivot_sort(arr):
     """
-    Sorts a NumPy array in ascending order using the quicksort algorithm.
+    Sorts a NumPy array in ascending order using the quicksort algorithm. (lucy was here)
     
     Args:
         arr: Numpy array of comparable elements
